@@ -13,33 +13,31 @@
         <form method="POST" action="./complete.html">
             <label>質問３</label>
             <h3>
-                //ここに質問
-                //type="text" maxlength="100"
+                社外のWebサービスで使いにくいと感じたページ名を記入してください。（100文字以内）
             </h3>
             <div class="uk-margin">
-                <input type="text" maxlength="100" />
+                <textarea cols="50" rows="3" maxlength="100"></textarea>
             </div>
             <label>質問４</label>
             <h3>
-                //ここに質問
-                //type="text" maxlength="100"
+                質問３で回答したページが具体的にどのように使いづらいか記入してください。（100文字以内）
             </h3>
             <div class="uk-margin">
-                <input type="text" maxlength="100" />
+                <textarea cols="50" rows="3" maxlength="100"></textarea>
             </div>
             <label>質問５</label>
             <h3>
-                日頃溜まっている鬱憤をどうぞ。
-                //type="text" maxlength="500"
+                日頃溜まっている鬱憤をなんでもどうぞ。（500文字以内）
             </h3>
             <div class="uk-margin">
-                <textarea cols="50" rows="10" maxlength="100"></textarea>
+                <textarea cols="50" rows="20" maxlength="500"></textarea>
             </div>
             <h6>アンケートは以上です。</h6>
             <div class="uk-margin">
                 <button class="uk-button uk-button-primary uk-button-large">送信する</button>
             </div>
         </form>
+        <input type="button" onClick='history.back();' value="戻る">
     </div>
 </body>
 </html>
