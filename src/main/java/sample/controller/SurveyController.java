@@ -6,13 +6,19 @@ import kotowari.component.TemplateEngine;
 
 import javax.inject.Inject;
 
-
-public class IndexController {
+/**
+ * @author terazawa akihito
+ */
+public class SurveyController {
 
     @Inject
     private TemplateEngine templateEngine;
 
     public String index() {
-        return "Hello, world!!";
+        return "Top";
+    }
+
+    public String survey() {
+        return "Top";
     }
 }
