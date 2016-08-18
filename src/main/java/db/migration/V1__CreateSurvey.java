@@ -18,7 +18,7 @@ public class V1__CreateSurvey  implements JdbcMigration {
                     " item2 VARCHAR(50)," +
                     " item3 VARCHAR(50)," +
                     " item4 VARCHAR(50)," +
-                    " item5 VARCHAR(100)");
+                    " item5 VARCHAR(100))");
         }
     }
 }
