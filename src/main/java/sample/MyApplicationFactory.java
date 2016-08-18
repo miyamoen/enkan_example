@@ -27,6 +27,7 @@ public class MyApplicationFactory implements ApplicationFactory {
 
         Routes routes = Routes.define(r -> {
             r.get("/").to(IndexController.class, "index");
+
         }).compile();
 
         app.use(new DefaultCharsetMiddleware());
