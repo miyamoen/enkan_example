@@ -18,19 +18,19 @@ public class SurveyController {
     @Inject
     private DomaProvider daoProvider;
 
-    public String index() {
-        return "Top";
+    public HttpResponse index() {
+        return templateEngine.render("top");
     }
 
-    public String survey1() {
-        return "survey1";
+    public HttpResponse survey1() {
+        return templateEngine.render("questionnaire1");
     }
 
-    public String survey2() {
-        return "survey2";
+    public HttpResponse survey2() {
+        return templateEngine.render("questionnaire2");
     }
 
-    public String complete() {
-        return "complete!";
+    public HttpResponse complete() {
+        return templateEngine.render("complete");
     }
 }
