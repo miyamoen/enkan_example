@@ -18,8 +18,8 @@ public class SurveyController {
     @Inject
     private DomaProvider daoProvider;
 
-    public String index() {
-        return "Top";
+    public HttpResponse index() {
+        return templateEngine.render("index");
     }
 
     public String survey1() {
