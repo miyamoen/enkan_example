@@ -2,30 +2,33 @@
 <html lang="jp">
 <head>
     <meta charset="UTF-8">
-    <title>アンケート画面(1/2)</title>
-    <link rel="stylesheet" href="css/uikit.gradient.css" />
+    <title>SE!診断</title>
+    <link rel="stylesheet" href="css/uikit.gradient.min.css" />
     <script src="js/uikit.min.js"></script>
 </head>
 <body>
     <div class="uk-text-center">
+        <h3>まずは簡単なパーソナルデータの入力をお願いします。</h3>
         <h3>以下の質問に回答し、最下部のボタンをクリックしてください。</h3>
+        <h6>※個人を特定するためのものではありません。診断結果には影響しません。</h6>
         <h6>※必ず全ての質問に回答してください。</h6>
         <form class="uk-form" method="GET" action="./quetionnaire2.html">
-            <label>質問１</label>
-            <h3>
-                これまで社内Webサービスで最も使いにくいと感じたページ名を記入してください。（100文字以内）
-                （判断基準：初めて見たときに操作に困った・日常的に使うときに面倒くさい等）
-            </h3>
-            <div class="uk-margin">
-                <textarea cols="50" rows="3" maxlength="100"></textarea>
-            </div>
-            <label>質問２</label>
-            <h3>
-                質問１で回答したページが具体的にどのように使いづらいか記入してください。（100文字以内）
-            </h3>
-            <div class="uk-margin">
-                <textarea cols="50" rows="3" maxlength="100"></textarea>
-            </div>
+            性別
+            <p><input type="radio" name="gender" value="0">男性</input></p>
+            <p><input type="radio" name="gender" value="1">女性</input></p>
+            <p><input type="radio" name="gender" value="2">その他</input></p>
+            年齢
+            <p><input type="radio" name="age" value="0">10代、20代</input></p>
+            <p><input type="radio" name="age" value="1">30代</input></p>
+            <p><input type="radio" name="age" value="2">40代</input></p>
+            <p><input type="radio" name="age" value="3">50代</input></p>
+            <p><input type="radio" name="age" value="4">60代</input></p>
+            <p><input type="radio" name="age" value="5">70代以上</input></p>
+            趣味
+            <p><input type="checkbox" id="hobby-0" name="hobby" value="0"><label for="hobby-0">プログラミング</label></input></p>
+            <p><input type="checkbox" id="hobby-1" name="hobby" value="1"><label for="hobby-1"></label></input></p>
+            <p><input type="checkbox" id="hobby-2" name="hobby" value="2"><label for="hobby-2">その他(100文字以内)</label></input>
+            <textarea cols="50" rows="4" maxlength="100" name="hobby"></textarea></p>
             <div class="uk-margin">
                 <button class="uk-button uk-button-primary uk-button-large">アンケート画面(2/2)に進む</button>
             </div>
