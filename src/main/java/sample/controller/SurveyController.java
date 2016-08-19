@@ -19,7 +19,7 @@ public class SurveyController {
     private DomaProvider daoProvider;
 
     public HttpResponse index() {
-        return templateEngine.render("index");
+        return templateEngine.render("top");
     }
 
     public HttpResponse survey1() {

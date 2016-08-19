@@ -3,7 +3,7 @@
     <div class="uk-text-center">
         <h3>以下の質問に回答し、最下部のボタンをクリックしてください。</h3>
         <h6>※必ず全ての質問に回答してください。</h6>
-        <form class="uk-form" method="GET" action="./quetionnaire2.html">
+        <form class="uk-form" method="POST" action="./2">
             <label>質問１</label>
             <h3>
                 //ここに質問
