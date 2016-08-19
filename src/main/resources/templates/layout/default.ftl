@@ -1,16 +1,17 @@
 <#macro layout title="Layout example">
     <!DOCTYPE html>
     <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>${title}</title>
+        <head>
+            <meta charset="UTF-8">
+            <title>${title}</title>
+            <link rel="stylesheet" href="css/uikit.gradient.css" />
+            <script src="js/uikit.min.js"></script>
+        </head>
 
-    <body>
-    <div class="container">
-        <#nested/>
-    </div>
-    </body>
+        <body>
+            <div class="container">
+                <#nested/>
+            </div>
+        </body>
     </html>
 </#macro>
