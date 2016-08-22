@@ -6,6 +6,7 @@
             <title>${title}</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/css/uikit.min.css" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/js/uikit.min.js"></script>
+
         </head>
         <body class="uk-height-1-1 uk-panel-box-primary">
             <div class="uk-grid" class="uk-height-1-1">

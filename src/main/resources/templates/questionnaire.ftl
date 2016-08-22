@@ -4,7 +4,7 @@
     <h3>以下の質問に回答し、最下部のボタンをクリックしてください。</h3>
     <h6>※個人を特定するためのものではありません。診断結果には影響しません。</h6>
     <h6>※必ず全ての質問に回答してください。</h6>
-    <form class="uk-form" method="POST" action="./2">
+    <form class="uk-form" method="POST" action="/user">
         <div class="uk-text-bold">性別</div>
         <p><input type="radio" id="0-1-1" name="gender" value="0"><label for="0-1-1">男性</label></input></p>
         <p><input type="radio" id="0-1-2" name="gender" value="1"><label for="0-1-2">女性</label></input></p>

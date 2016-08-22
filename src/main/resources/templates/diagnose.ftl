@@ -2,7 +2,7 @@
     <@layout.layout "SE!診断">
     <h3>以下の質問に回答し、最下部のボタンをクリックしてください。</h3>
     <h6>※必ず全ての質問に回答してください。</h6>
-    <form method="POST" action="../complete" class="uk-form uk-margin">
+    <form method="POST" action="/" class="uk-form uk-margin">
     
         <div class="uk-text-bold">質問１</div>
         <h3>

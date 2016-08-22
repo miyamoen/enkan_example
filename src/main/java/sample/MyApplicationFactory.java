@@ -13,7 +13,7 @@ import kotowari.middleware.serdes.ToStringBodyWriter;
 import enkan.system.inject.ComponentInjector;
 import kotowari.routing.Routes;
 import sample.controller.IndexController;
-import sample.controller.SurveyController;
+import sample.controller.QuestionnaireController;
 
 import static enkan.util.BeanBuilder.builder;
 import static enkan.util.Predicates.*;
@@ -27,10 +27,11 @@ public class MyApplicationFactory implements ApplicationFactory {
         WebApplication app = new WebApplication();
 
         Routes routes = Routes.define(r -> {
-            r.get("/").to(SurveyController.class, "index");
-            r.get("/survey/1").to(SurveyController.class, "survey1");
-            r.post("/survey/2").to(SurveyController.class, "survey2");
-            r.post("/complete").to(SurveyController.class, "complete");
+            r.get("/").to(QuestionnaireController.class, "index");
+            r.get("/user").to(QuestionnaireController.class, "newUsers");
+            r.post("/user").to(QuestionnaireController.class, "createUsers");
+            r.get("/diagnose").to(QuestionnaireController.class, "diagnose");
+            r.post("/diagnose").to(QuestionnaireController.class, "createDiagnose");
         }).compile();
 
         app.use(new DefaultCharsetMiddleware());
