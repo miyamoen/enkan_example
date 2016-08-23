@@ -12,7 +12,6 @@ import kotowari.middleware.*;
 import kotowari.middleware.serdes.ToStringBodyWriter;
 import enkan.system.inject.ComponentInjector;
 import kotowari.routing.Routes;
-import sample.controller.IndexController;
 import sample.controller.QuestionnaireController;
 
 import static enkan.util.BeanBuilder.builder;
